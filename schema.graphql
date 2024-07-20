@@ -1,0 +1,15 @@
+type Account @entity {
+  id: ID!
+  address: Bytes!
+  totalAmountReceived: BigInt!
+  totalAmountSent: BigInt!
+}
+
+type TransferEvent @entity {
+  id: ID!
+  tx: Bytes
+  amount: BigInt
+  timestamp: BigInt
+  from: Bytes
+  to: Bytes
+}
