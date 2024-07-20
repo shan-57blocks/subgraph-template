@@ -3,7 +3,7 @@ import { Address, BigInt, log } from '@graphprotocol/graph-ts';
 import { Transfer } from '../generated/ERC20/ERC20';
 import { Account, TransferEvent } from '../generated/schema';
 
-export function handleTransfer(event: Transfer): void {
+export function handleTransferEvent(event: Transfer): void {
   const fromAccountId = event.params.from.toHexString();
   let fromAccount = Account.load(event.params.from.toHexString());
   if (!fromAccount) {

@@ -4,10 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: ERC20
-    network: base-sepolia
+    network: sepolia
     source:
+      address: '0x8756a3396FbD96D686604AAEAAEa4e325a18e03B'
       abi: ERC20
-      startBlock: 6732804
+      startBlock: 5136503
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
